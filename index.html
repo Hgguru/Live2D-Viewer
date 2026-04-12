@@ -1,348 +1,238 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
+
 <head>
-  <!-- Website Metadata -->
-  <meta charset="UTF-8">
-  <meta property="og:image" content="https://raw.githubusercontent.com/ImDuck42/random/master/contents/preview.png">
-  <meta name="viewport"     content="width=device-width, initial-scale=1.0">
-  <meta name="description"  content="θεός δίκη – DIE Website rund um di theodizee Frage">
-  <meta name="theme-color"  content="#b4befe"> 
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="icon" type="image/svg+xml" href="./contents/religion-svgrepo.svg">
-  <title>θεός δίκη – Theodizee</title>
+    <!-- Website Metadata -->
+    <meta charset="UTF-8">
+    <meta property="og:image" content="https://raw.githubusercontent.com/ImDuck42/Live2D-Viewer/master/assets/screenshots/PreviewPC.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A feature-rich, browser-based Live2D model viewer using pixi-live2d-display.">
+    <meta name="theme-color" content="#8c5eff">
+    
+    <!-- Name and favicon for the website -->
+    <title>Live2D Viewer</title>
+    <link rel="icon" type="image/svg+xml" href="assets/icon.svg" sizes="any">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">       <!-- Main application styles -->
+    <link rel="stylesheet" href="css/repoexplorer.css"> <!-- Styles for the GitHub repository explorer modal -->
+    <link rel="stylesheet" href="css/newsmodal.css">    <!-- Styles for the changelog modal -->
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
-<body>
-  <div class="app-container">
 
-    <!-- Seitenleiste -->
-    <nav class="nav-bar">
-      <div class="nav-top">
-        <i class="fa-solid fa-house active"       data-tab="home"       title="Startseite"></i>
-        <i class="fa-solid fa-book-bible"         data-tab="bibel"      title="Biblische Perspektive auf Leid"></i>
-        <i class="fa-solid fa-users"              data-tab="theologien" title="Theologische Ansätze"></i>
-        <i class="fa-solid fa-flask"              data-tab="umgang"     title="Umgang mit Leid"></i>
-        <i class="fa-solid fa-hand-holding-heart" data-tab="hilfe"      title="Hilfsangebote"></i>
-        <i class="fa-solid fa-link"               data-tab="quellen"    title="Quellenangaben"></i>
-      </div>
-      <div class="nav-bottom"></div>
-    </nav>
-
-    <div class="page-content">
-
-      <!-- Startseite -->
-      <section class="content-section active" id="home">
-        <h1 class="section-title">θεός δίκη</h1>
-        <p class="section-subtitle">Die Gerechtigkeit Gottes</p>
-
-        <div class="card">
-          <p>
-            Egal ob Mobbing, Armut, Krieg oder Naturkatastrophen – die Welt ist voller Leid, und es kann jeden treffen.
-            Dabei spielt es keine Rolle, wer man ist oder was man getan hat; für niemanden ist die Welt perfekt.
-            Dieser Umstand stellt jeden, der an einen Gott glaubt, vor die Frage, warum dieser solche schlimmen Dinge überhaupt zulässt –
-            die Theodizee-Frage.
-            <br><br>
-            Diese stellt den Glauben und das Gottesbild mehrerer Milliarden Menschen (religionsübergreifend) fundamental infrage
-            und ist dadurch nicht nur für Christen, sondern auch für Muslime, Juden und Andersgläubige eine der größten
-            Herausforderungen, wenn es um die Instandhaltung des eigenen Weltbildes geht.
-          </p>
-        </div>
-
-        <div class="card card-row">
-          <img
-            src="https://www.sueddeutsche.de/2026/03/03/11fb452f-204f-4a9d-99eb-8e6493ed3dcb.jpg?q=60&fm=avif&width=840&rect=0%2C53%2C2048%2C1152"
-            alt="Bild eines Kriegsschauplatzes im Iran"
-          >
-          <p>
-            <strong>Das Problem:</strong>
-            Gott wird im Allgemeinen mit drei wesentlichen Eigenschaften beschrieben: allmächtig, allliebend und allwissend.
-            Demnach müsste er in der Lage sein, eine Welt ohne jegliche Form von Leid zu erschaffen.
-            Als wohlwollender Gott sollte er auch genau das tun.
-            Offensichtlich ist das jedoch nicht der Fall, beispielsweise im Iran 2026 – was sich nur erklären lässt, indem man eine von Gottes Eigenschaften
-            ausschließt oder annimmt, dass seine Wege für uns Menschen unergründlich sind.
-          </p>
-        </div>
-      </section>
-
-      <!-- Biblische Perspektive -->
-      <section class="content-section" id="bibel">
-        <h1 class="section-title">Biblische Perspektive auf Leid</h1>
-        <p class="section-subtitle">Was das Buch Hiob zum Verständnis des Leidens beitragen kann</p>
-
-        <div class="card">
-          <p class="summary-lead">
-            <strong>
-              Nachdem Gott sich auf eine Wette mit Satan einließ, ob der gläubige Hiob von seinem Glauben abkäme,
-              sobald ihm Leid widerfahre, nimmt Satan Hiobs Wohlstand, Kinder und Gesundheit.
-              Auf sein Leiden hin wird er von seinen Freunden besucht, welche versuchen, ihn mit möglichen Gründen
-              seines Leidens zu trösten:
-            </strong>
-          </p>
-
-          <div class="comparison-grid">
-
-            <div class="comparison-panel">
-              <div class="comparison-panel-header">
-                <p><strong>Elifas von Teman, Bildad von Schuach, Zofar von Naama</strong></p>
-              </div>
-              <div class="comparison-panel-content">
-                <div class="image-text">
-                  <img
-                    src="https://images.meme-arsenal.com/36d19ea54255834c5b4321cabad402e8.jpg"
-                    alt="Richterin"
-                  >
-                  <p>
-                    Hiobs ältesten drei Freunde erklären ihm, dass sein Leid in einem kausalen Zusammenhang mit
-                    seinen früheren Taten steht. Demnach wird Hiob gezielt von Gott für angebliche Sünden bestraft,
-                    die er sich in der Vergangenheit schuldig gemacht haben soll. Sie insinuieren damit, dass jegliche
-                    Verantwortung und Schuld an seinem Leid einzig und allein bei Hiob liegt, indem sie darauf hinweisen,
-                    dass Gott die absolute Gerechtigkeit darstelle und dementsprechend handle.
-                  </p>
+<body oncontextmenu="return false">
+    
+    <!-- Main Application Container -->
+    <div class="app-container">
+        <header class="site-header">
+            <h1 id="site-title-button" title="View Project News">Live2D Viewer</h1>
+            <div class="model-imports">
+                
+                <!-- Group for loading a model from a URL or the GitHub explorer -->
+                <div class="model-loader-group">
+                    <button id="open-file-explorer-btn" class="header-icon-button" title="Open GitHub File Explorer"
+                        aria-controls="file-explorer-modal" aria-expanded="false">
+                        <i class="fas fa-folder-open" aria-hidden="true"></i>
+                    </button>
+                    <input type="text" id="model-url-input" placeholder="Enter L2D model URL..."
+                        title="Enter the URL of a Live2D model file">
+                    <button id="load-url-button" title="Load model from the specified URL">Load URL</button>
                 </div>
-                <p>
-                  Für die Theodizee-Frage bedeutet das: Leid ist häufig die Konsequenz menschlicher Taten und des freien Willens.
-                </p>
-              </div>
-            </div>
 
-            <div class="comparison-panel">
-              <div class="comparison-panel-header">
-                <p><strong>Elihu</strong></p>
-              </div>
-              <div class="comparison-panel-content">
-                <div class="image-text">
-                  <img
-                    src="https://www.tagesspiegel.de/images/2814859/alternates/BASE_21_9_W1000/1660090678000/heprod-images-fotos-8-3-4-20170309-kind-319-1-20170307154356994.jpeg"
-                    alt="Kind mit nachdenklichem Gesichtsausdruck"
-                  >
-                  <p>
-                    Der jüngste Freund Hiobs widerspricht als Einziger dieser Annahme – und hat damit recht:
-                    Hiobs Leid ist keine Strafe, sondern das Ergebnis einer Wette zwischen Gott und Satan.
-                    Das weiß Elihu allerdings nicht. Seine Theorie ist, dass Gott Leid als erzieherische Maßnahme nutzt,
-                    um größeres Übel zu verhindern. Er kritisiert Hiob für seinen angeblichen Hochmut und ist der Ansicht,
-                    dass diese Sünde einen von Gott abbringt – was wiederum zu noch mehr Leid führe.
-                  </p>
+                <!-- Group for loading one of the default models -->
+                <div class="model-loader-group">
+                    <div class="custom-dropdown" id="model-select-dropdown" tabindex="0" aria-haspopup="listbox"
+                        aria-expanded="false" title="Select a default model to load">
+                        <span class="custom-dropdown-selected" id="model-select-dropdown-selected">Default Models</span>
+                        <ul class="custom-dropdown-list" id="model-select-dropdown-list" role="listbox"
+                            aria-label="List of default models">
+                            
+                            <!-- Options for the default models dropdown -->
+                            <li class="custom-dropdown-option"
+                                data-value="https://cdn.jsdelivr.net/gh/guansss/pixi-live2d-display/test/assets/shizuku/shizuku.model.json"
+                                role="option">
+                                Shizuku (Cubism 2.1)
+                            </li>
+                            <li class="custom-dropdown-option"
+                                data-value="https://cdn.jsdelivr.net/gh/guansss/pixi-live2d-display/test/assets/haru/haru_greeter_t03.model3.json"
+                                role="option">
+                                Haru (Cubism 4)
+                            </li>
+                            <li class="custom-dropdown-option"
+                                data-value="https://raw.githubusercontent.com/Eikanya/Live2d-model/refs/heads/master/崩坏学园2/bronya/model.json"
+                                role="option">
+                                Bronya (Cubism 2.1)
+                            </li>
+                        </ul>
+
+                        <!-- Hidden input to store the value of the selected model -->
+                        <input type="hidden" id="model-select" value="">
+                    </div>
+                    <button id="load-selected-button" title="Load the selected default model">Load Selected</button>
                 </div>
-                <p>
-                  Hier wird Leid als etwas Unvermeidbares dargestellt, wobei Gottes Wege stets die des geringsten Leides sind.
-                </p>
-              </div>
             </div>
+        </header>
 
-          </div>
-        </div>
-      </section>
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <div class="canvas-area">
 
-      <!-- Theologische Ansätze -->
-      <section class="content-section" id="theologien">
-        <h1 class="section-title">Theologische Ansätze</h1>
-        <p class="section-subtitle"></p>
-
-        <div class="card">
-          <p class="summary-lead">
-            <strong>Verschiedene Theologen deuten die Existenz von Leid unterschiedlich.</strong>
-          </p>
-
-          <div class="comparison-grid">
-
-            <div class="comparison-panel">
-              <div class="comparison-panel-header">
-                <p><strong>Gottfried Wilhelm Leibniz</strong></p>
-              </div>
-              <div class="comparison-panel-content">
-                <div class="leibniz-block">
-                  <p class="leibniz-block-title">Leibniz' Aussagen sind folgende:</p>
-                  <ul>
-                    <li>Es gibt unendlich viele mögliche Welten (Universen)</li>
-                    <li>Gott wählte diejenige, die er für die beste hielt – also jene mit dem wenigsten Leid</li>
-                  </ul>
-                  <p class="leibniz-block-implication">-> Unsere Welt ist die bestmögliche aller Welten</p>
-                  <p class="leibniz-block-caveat">Jedoch widerspricht dies dem Anschein eines allmächtigen Gottes</p>
-
-                  <p class="leibniz-block-title">Eine andere Möglichkeit:</p>
-                  <ul>
-                    <li>Die Welt wäre ohne Leid nicht die bestmögliche</li>
-                    <li>Eventuell ist eine leidlose Welt nicht Gottes einziger Weg zur bestmöglich guten Welt</li>
-                  </ul>
-                  <ul class="leibniz-block-implication">
-                    <li>Verbesserungen an einer Stelle können an anderer Verschlechterungen verursachen</li>
-                    <li>Gott versucht so viel Leid wie möglich zu vermeiden und gute sowie schlechte Situationen im Gleichgewicht zu halten</li>
-                  </ul>
-
-                  <p class="leibniz-block-tldr">
-                    TLDR;<br>
-                    Wenn unsere Welt – mit Leid – die beste ist, ist Gott nicht allmächtig; oder wenn er es gewollt hätte, ist er nicht moralisch perfekt.
-                  </p>
+                <!-- Area where the Live2D model is rendered -->
+                <canvas id="live2d-canvas" aria-label="Live2D Model Display Area"></canvas>
+                
+                <!-- Loading overlay shown while a model is being loaded -->
+                <div id="loading-overlay" class="loading-overlay" role="status" aria-live="polite"
+                    style="display: none;">
+                    <div class="spinner" aria-hidden="true"></div>
+                    <p class="loading-text">Loading model...</p>
                 </div>
-              </div>
-            </div>
 
-            <div class="comparison-panel">
-              <div class="comparison-panel-header">
-                <p><strong>Hans Jonas</strong></p>
-              </div>
-              <div class="comparison-panel-content">
-                <div class="leibniz-block">
-                  <p class="leibniz-block-title">Der Gottesbegriff nach Auschwitz (1987):</p>
-                  <ul>
-                    <li>Gottes klassische Eigenschaften sind widersprüchlich und müssen neu gedacht werden</li>
-                    <li>Jonas ist bereit, sein Gottesbild grundlegend zu ändern</li>
-                    <li>Für ihn ist es die <strong>Allmächtigkeit</strong>, die wegfällt</li>
-                  </ul>
-
-                  <p class="leibniz-block-title">Wie antwortet Jonas auf die Theodizee-Frage?</p>
-                  <ul>
-                    <li>Gott hat seine Allmacht nach der Schöpfung abgelegt, damit der Mensch frei sein kann</li>
-                    <li>Absolute Freiheit kann nur existieren, wenn Gott nicht eingreift – auch nicht um Ungerechtigkeit abzuwenden</li>
-                    <li>Gott leidet mit den Menschen (z.B. mit denen in Auschwitz) und kann nicht intervenieren</li>
-                    <li>Leid ist die Konsequenz von Freiheit</li>
-                    <li>Gott ist uns näher als wir bisher dachten</li>
-                  </ul>
-
-                  <p class="leibniz-block-tldr">
-                    TLDR;<br>
-                    Leid existiert, weil Gott – um uns absolute Freiheit zu gewähren – auf seine Allmächtigkeit verzichtet hat
-                    und es dadurch nicht abwenden kann.
-                  </p>
+                <!-- Message shown when no model is loaded -->
+                <div id="no-model-message" class="canvas-message">
+                    <i class="fas fa-circle-user" aria-hidden="true"></i>
+                    <p>Select or enter a model URL to display</p>
                 </div>
-              </div>
+
+                <!-- Displays the filename of the current model -->
+                <div id="model-filename" class="model-filename" title="Click to copy filename"></div>
             </div>
 
-          </div>
-        </div>
-      </section>
+            <!-- Sidebar with controls for the current model -->
+            <aside class="control-panel" aria-labelledby="control-panel-heading">
 
-      <!-- Umgang mit Leid -->
-      <section class="content-section" id="umgang">
-        <h1 class="section-title">Umgang mit Leid</h1>
-        <p class="section-subtitle">Wie Menschen und Religionen auf das Problem des Leidens reagieren</p>
+                <!-- General model controls (e.g., show hit areas, delete model) -->
+                <div class="control-item">
+                    <input type="checkbox" id="show-hit-areas-checkbox" disabled />
+                    <label for="show-hit-areas-checkbox"
+                        title="Toggle visibility of interactive hit areas on the model">Show Hit Areas</label>
+                    <button id="delete-selected-model-button" title="Delete the currently selected model" disabled>
+                        <i class="fas fa-trash" aria-hidden="true"></i>
+                    </button>
+                </div>
 
-        <div class="umgang-grid">
+                <!-- Section for model expressions -->
+                <div class="panel-section">
+                    <h3>Expressions</h3>
+                    <div id="expressions-container" class="model-features-container" aria-live="polite">
+                        <p class="no-content-message">No expressions available</p>
+                    </div>
+                </div>
 
-          <div class="card umgang-card">
-            <p class="umgang-card-title">Rechtfertigung des Leidens</p>
-            <ul>
-              <li>Leid wird durch höhere Zwecke gerechtfertigt – etwa als Prüfung oder als gerechte Strafe für schlechte Taten</li>
-              <li>Ohne Leid könnten wir leidfreie Zeiten nicht wertschätzen – Schmerz macht Freude erst erfahrbar</li>
-              <li>Leid kann zur moralischen Reifung und persönlichem Wachstum beitragen</li>
-            </ul>
-          </div>
+                <!-- Section for model motions -->
+                <div class="panel-section">
+                    <h3>Motions</h3>
+                    <div id="motions-container" class="model-features-container" aria-live="polite">
+                        <p class="no-content-message">No motions available</p>
+                    </div>
+                </div>
 
-          <div class="card umgang-card">
-            <p class="umgang-card-title">Anpassung der Gottesattribute</p>
-            <ul>
-              <li>Man akzeptiert, dass Gott nicht gleichzeitig allmächtig, allgütig und allwissend sein kann</li>
-              <li>Laut <strong>Hans Jonas</strong> lassen sich nur zwei der drei klassischen Gotteseigenschaften gleichzeitig aufrechterhalten:</li>
-            </ul>
-            <p class="umgang-card-example">
-              z.B.: Wenn Gott verständlich und allmächtig ist, kann er nicht vollkommen gütig sein – sonst würde er eingreifen.
-            </p>
-          </div>
+                <!-- Section for model hit areas -->
+                <div class="panel-section">
+                    <h3>Hit Areas</h3>
+                    <div id="hit-areas-container" class="model-features-container" aria-live="polite">
+                        <p class="no-content-message">No hit areas available</p>
+                    </div>
+                </div>
+            </aside>
+        </main>
 
-          <div class="card umgang-card">
-            <p class="umgang-card-title">Verweigerung & Resignation</p>
-            <ul>
-              <li>Die Frage nach dem Leid wird als unlösbar und Gott als unergründlich empfunden und schlicht aufgegeben</li>
-              <li>Manche Menschen wenden sich vom Glauben ab – das Leid wird zum Argument gegen die Existenz Gottes</li>
-              <li>Diese Haltung entspricht einem praktischen Atheismus angesichts des Theodizeeproblems</li>
-            </ul>
-          </div>
+        <!-- Website Footer -->
+        <footer class="site-footer">
+            <p>Powered by <a href="https://github.com/guansss/pixi-live2d-display" target="_blank"
+                    rel="noopener noreferrer">pixi-live2d-display</a></p>
+            <p>Model controls: Drag to move, Scroll/Pinch to zoom, Tap to interact.</p>
+        </footer>
 
-        </div>
+        <!-- Placeholder for the Changelog Modal -->
+        <div id="changelog-placeholder"></div>
 
-        <div class="umgang-images">
-          <img src="https://bilder.deutschlandfunk.de/FI/LE/_f/46/FILE_f46070c9902658cf987ae801c704caaf/imago0095424781h-jpg-100-1920x1080.jpg" alt="Sintflut-Darstellung">
-          <img src="https://www.renovabis.de/site/assets/files/38874/auschwitz.1500x0.jpg"                                                      alt="Auschwitz">
-        </div>
-      </section>
+        <!-- The modal for the GitHub repository explorer -->
+        <div id="file-explorer-modal" class="file-explorer-modal-container" role="dialog" aria-modal="true"
+            aria-labelledby="file-explorer-heading">
+            <button id="file-explorer-close-btn" class="file-explorer-close-btn" title="Close File Explorer"
+                aria-label="Close File Explorer">
+                <i class="fas fa-xmark" aria-hidden="true"></i>
+            </button>
 
-      <!-- Hilfsangebote -->
-      <section class="content-section" id="hilfe">
-        <h1 class="section-title">Hilfsangebote</h1>
-        <p class="section-subtitle">Happy getting better</p>
-
-        <div class="card">
-          <p class="hilfe-intro">
-            Im Leben begegnen Menschen immer wieder Schmerz, Leid und Verlust. Religion kann dabei helfen, solche Erfahrungen zu bewältigen und ihnen Sinn zu geben.
-            Gleichzeitig kann Leid den Glauben erschüttern und Zweifel auslösen, insbesondere im Zusammenhang mit der Theodizee-Frage nach Gott und Leid.
-            In solchen Situationen kann Unterstützung helfen, mit religiösen Fragen und persönlichem Leid umzugehen.
-            Hier findest du Beispiele, an wen du dich wenden kannst, wenn du gerade in so einer Situation bist:
-          </p>
-        </div>
-
-        <div class="hilfe-grid">
-
-          <div class="card hilfe-card">
-            <p class="hilfe-card-title">Telefon Seelsorge</p>
-            <p class="hilfe-card-desc">Eine von den christlichen Kirchen finanzierte Hotline für Hilfesuchende (religionsunabhängig)</p>
-            <p class="hilfe-card-detail">Rund um die Uhr erreichbar unter:</p>
-            <div class="hilfe-card-contact">
-              <span>0800 1110111</span>
-              <span>0800 1110222</span>
+            <!-- Header of the file explorer modal -->
+            <div class="file-explorer-header">
+                <h2 id="file-explorer-heading">GitHub Repository Explorer</h2>
+                <div class="fe-repo-input-container">
+                    <input type="text" id="fe-owner-input" placeholder="GitHub Owner" value="Eikanya"
+                        title="Enter GitHub username or organization">
+                    <span>/</span>
+                    <input type="text" id="fe-repo-input" placeholder="Repository Name" value="Live2d-model"
+                        title="Enter GitHub repository name">
+                    <button id="fe-load-repo-btn" title="Load repository content">Load Repository</button>
+                </div>
             </div>
-          </div>
 
-          <div class="card hilfe-card">
-            <p class="hilfe-card-title">Psychologische Beratungsstelle EFL Lörrach</p>
-            <p class="hilfe-card-desc">Beratungsstelle der Katholischen Kirche</p>
-            <p class="hilfe-card-detail">Schwarzwaldstraße 1, 79539 Lörrach</p>
-            <p class="hilfe-card-detail">Erreichbar unter: <strong>07621 3087</strong></p>
-            <a class="hilfe-card-link" href="https://www.efl-loerrach.de/angebote-2/einzelberatung/" target="_blank" rel="noopener noreferrer">
-              www.efl-loerrach.de
-            </a>
-          </div>
+            <!-- Main content area of the file explorer modal -->
+            <div class="file-explorer-main-content">
+                <div class="fe-content-area-header">
+                    <button id="fe-up-directory-btn" class="fe-icon-button" title="Navigate to parent directory"
+                        style="display: none;">
+                        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+                    </button>
 
-          <div class="card hilfe-card">
-            <p class="hilfe-card-title">Örtliche Kirchengemeinde</p>
-            <p class="hilfe-card-desc">Dein(e) örtliche(r) Kirchengemeinde oder Pfarrer stehen dir ebenfalls gerne zur Verfügung, wenn du Hilfe brauchst oder Fragen bezüglich deines Glaubens hast.</p>
-          </div>
+                    <!-- Breadcrumbs for navigating the repository folder structure -->
+                    <div id="fe-breadcrumbs" class="fe-breadcrumbs"></div>
+                </div>
+                <div class="fe-content-area-body">
 
+                    <!-- Container for the list of files and folders -->
+                    <div id="fe-file-listing-container" class="fe-file-listing-container scrollable">
+                        <p class="fe-placeholder-text">Load a repository to see its content.</p>
+                    </div>
+
+                    <!-- Container for previewing files -->
+                    <div id="fe-file-preview-container" class="fe-file-preview-container" style="display: none;">
+                        <div class="fe-preview-header">
+                            <h4 id="fe-preview-filename"></h4>
+                            <button id="fe-close-preview-btn" class="fe-icon-button fe-close-btn"
+                                title="Close file preview" aria-label="Close file preview">
+                                <i class="fas fa-xmark" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div id="fe-preview-content" class="fe-preview-content scrollable"></div>
+                        <div id="fe-preview-actions" class="fe-preview-actions"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer of the file explorer modal, displaying status messages -->
+            <footer class="file-explorer-footer">
+                <p>Status: <span id="fe-status-message" aria-live="polite">Idle</span></p>
+            </footer>
         </div>
 
-        <div class="help-images">
-          <img src="./contents/image-man.png"   alt="Mann, der Hilfe anbietet">
-          <img src="./contents/image-woman.png" alt="Frau, die Hilfe anbietet">
+        <!-- Global loader overlay for the repository explorer -->
+        <div id="fe-loader" class="fe-loader-overlay" style="display: none;" role="status" aria-live="assertive">
+            <div class="spinner"></div>
+            <p>Loading Repository Data...</p>
         </div>
-      </section>
-
-      <!-- Quellenangaben -->
-      <section class="content-section" id="quellen">
-        <h1 class="section-title">Quellenangaben</h1>
-        <p class="section-subtitle">Woher haben wir all die Infos?</p>
-
-        <div class="card">
-          <ul class="sources-list">
-            <li><a href="https://www.bibleserver.com/LUT/Hiob1"                                                                                                                    target="_blank">(bibleserver.com) Das Buch Hiob                                          </a></li>
-            <li><a href="https://images.meme-arsenal.com/36d19ea54255834c5b4321cabad402e8.jpg"                                                                                     target="_blank">(meme-arsenal.com) Bild: Richterin                                       </a></li>
-            <li><a href="https://www.tagesspiegel.de/images/2814859/alternates/BASE_21_9_W1000/1660090678000/heprod-images-fotos-8-3-4-20170309-kind-319-1-20170307154356994.jpeg" target="_blank">(tagesspiegel.de) Bild: Kind mit Mutter                                  </a></li>
-            <li><a href="https://www.sueddeutsche.de/2026/03/03/11fb452f-204f-4a9d-99eb-8e6493ed3dcb.jpg"                                                                          target="_blank">(sueddeutsche.de) Bild: Iran-Krieg                                       </a></li>
-            <li><a href="https://fontawesome.com/search?ic=free-collection"                                                                                                        target="_blank">(cdnjs.cloudflare.com) Font Awesome Icons                                </a></li>
-            <li><a href="https://www.svgrepo.com/svg/414714/religion-peace-cultural"                                                                                               target="_blank">(svgrepo.com) Seiten-Icon                                                </a></li>
-            <li><a href="https://w.wallhaven.cc/full/2y/wallhaven-2y2wg6.png"                                                                                                      target="_blank">(wallhaven.cc) Platzhalterbild                                           </a></li>
-            <li><a href="https://freie-referate.de/geschichte/pinchas-lapide-und-hans-jonas-theologie-nach-auschwitz-aus-juedischer-perspektive"                                   target="_blank">(freie-referate.de) Hans Jonas zu Theodizee – eine kurze Zusammenfassung </a></li>
-            <li><a href="https://www.suhrkamp.de/buch/hans-jonas-der-gottesbegriff-nach-auschwitz-t-9783518380161"                                                                 target="_blank">(suhrkamp.de) Der Gottesbegriff nach Auschwitz – Hans Jonas              </a></li>
-            <li><a href="https://de.wikipedia.org/wiki/Hans_Jonas"                                                                                                                 target="_blank">(wikipedia.org) Hans Jonas                                               </a></li>
-            <li><a href="https://www.youtube.com/watch?v=pPU9hoNzRDg"                                                                                                              target="_blank">(youtube.com) Der Gottesbegriff nach Auschwitz (Hans Jonas)              </a></li>
-            <li><a href="https://www.die-bibel.de/ressourcen/wirelex/6-inhalte-iii-systematisch-theologische-didaktik/theodizee"                                                   target="_blank">(die-bibel.de) Leiddeutung in theologisch-systematischer Perspektive     </a></li>
-            <li><a href="https://www.telefonseelsorge.de/ueber-uns"                                                                                                                target="_blank">(telefonseelsorge.de) Seelsorge Website                                  </a></li>
-            <li><a href="https://www.efl-loerrach.de/angebote-2/einzelberatung"                                                                                                    target="_blank">(efl-loerrach.de) Kirchliche Beratungsstelle Lörrach                     </a></li>
-            <li><a href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.GGlQFe4tliFJ53ott1rgMQHaE8%3Fpid%3DApi"                      target="_blank">(DuckDuckGo Image Discovery) Mann – Hilfe                                </a></li>
-            <li><a href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.y0bYku9INv4IC8j4U_F7mwHaE8%3Fpid%3DApi"                      target="_blank">(DuckDuckGo Image Discovery) Frau – Hilfe                                </a></li>
-            <li><a href="https://remove.bg"                                                                                                                                        target="_blank">(remove.bg) Hintergrundentfernung                                        </a></li>
-            <li><a href="https://bilder.deutschlandfunk.de/FI/LE/_f/46/FILE_f46070c9902658cf987ae801c704caaf/imago0095424781h-jpg-100-1920x1080.jpg"                               target="_blank">(deutschlandfunk.de) Sintflut-Bild                                       </a></li>
-            <li><a href="https://www.renovabis.de/site/assets/files/38874/auschwitz.1500x0.jpg"                                                                                    target="_blank">(renovabis.de) Auschwitz-Bild                                            </a></li>
-            <li><a href="https://www.ndr.de/geschichte/koepfe/Gottfried-Wilhelm-Leibniz-Philosoph-Erfinder-und-Universalgenie,leibniz196.html"                                     target="_blank">(ndr.de) Leibniz – Informationen                                         </a></li>
-            <li><a href="https://www.die-inkognito-philosophin.de/blog/leibniz-theodizee"                                                                                          target="_blank">(die-inkognito-philosophin.de) Leibniz – Informationen                   </a></li>
-          </ul>
-          <p class="sources-access-date">Letztzugriff: 12. Apr. 2026</p>
-        </div>
-      </section>
-
     </div>
-  </div>
 
-  <script src="app.js"></script>
-  <script type="module" src="./contents/comments.js"></script>
+    <!-- Console Log Exclusion Patterns -->
+    <script src="js/exclusions.js"></script>
+
+    <!-- Application libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/pixi.js@6.5.10/dist/browser/pixi.min.js"></script>        <!-- PIXI.js rendering engine -->
+    <script src="libs/live2d.js"></script>                                                              <!-- Live2D framework -->
+    <script src="libs/live2dcubismcore.js"></script>                                                    <!-- Core Cubism library -->
+    <script src="https://cdn.jsdelivr.net/npm/pixi-live2d-display@0.4.0/dist/index.min.js"></script>    <!-- PIXI Live2D display plugin -->
+    <script src="libs/extra.js"></script>                                                               <!-- HitArea rendering library -->
+
+    <!-- Zip loading functionality -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>    <!-- JSZip library -->
+    <script src="js/importlocalzip.js"></script>                                                <!-- Script for zip file processing -->
+
+    <!-- Custom application scripts -->
+    <script src="js/script.js"></script>        <!-- Main application logic -->
+    <script src="js/repoexplorer.js"></script>  <!-- GitHub repository explorer logic -->
+    <script src="js/newsmodal.js"></script>     <!-- Changelog modal logic -->
 </body>
+
 </html>
