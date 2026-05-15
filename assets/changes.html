@@ -15,7 +15,7 @@
 
 <body>
     <!-- Changelog modal content -->
-    <div id="changelog-modal" class="changelog-modal-container">
+    <div id="changelog-modal" class="changelog-modal">
         
         <!-- Close button for the modal -->
         <button id="changelog-close-button" class="changelog-close-btn" title="Close Changelog"
@@ -24,25 +24,39 @@
         </button>
 
         <!-- Scrollable content area for the changelog entries -->
-        <div class="changelog-content">
-            <h2>v5.0 — What's New:</h2>
+        <div class="changelog-body">
+            <h2>v5.1 — What's New:</h2>
 
-            <!-- February 12, 2025 -->
+            <!-- May 15, 2026 -->
             <article class="changelog-entry">
-                <h3 class="changelog-version">Commits on February 12, 2025</h3>
-                <p class="changelog-date">February 12, 2025</p>
+                <h3 class="changelog-version">Commits on May 15, 2026</h3>
+                <p class="changelog-date">May 15, 2026</p>
                 <ul>
                     <li><strong>[NONEYET]</strong><br>
+                        Fixed Model switching lag on zip imports by capping the name length to 25 characters
+                        <br>
+                        Made the project more modular by using js modules and seperating js into multiple files
+                        <br>
+                        Very few things changed visually, most are codebase related changes
+                    </li>
+                </ul>
+            </article>
+
+            <!-- February 12, 2026 -->
+            <article class="changelog-entry">
+                <h3 class="changelog-version">Commits on February 12, 2026</h3>
+                <p class="changelog-date">February 12, 2026</p>
+                <ul>
+                    <li><strong>[fe54876]</strong><br>
                         fixed the og image embed by using a direct https url
                     </li>
                 </ul>
             </article>
 
-
-            <!-- February 7, 2025 -->
+            <!-- February 7, 2026 -->
             <article class="changelog-entry">
-                <h3 class="changelog-version">Commits on February 7, 2025</h3>
-                <p class="changelog-date">February 7, 2025</p>
+                <h3 class="changelog-version">Commits on February 7, 2026</h3>
+                <p class="changelog-date">February 7, 2026</p>
                 <ul>
                     <li><strong>[caca0da]</strong><br>
                         added smoother local model imports, they still ned to be compressed in a zip format - importlocalzip.js
@@ -62,10 +76,10 @@
                 </ul>
             </article>
 
-            <!-- February 6, 2025 -->
+            <!-- February 6, 2026 -->
             <article class="changelog-entry">
-                <h3 class="changelog-version">Commits on February 6, 2025</h3>
-                <p class="changelog-date">February 6, 2025</p>
+                <h3 class="changelog-version">Commits on February 6, 2026</h3>
+                <p class="changelog-date">February 6, 2026</p>
                 <ul>
                     <li><strong>[bdb90e9] OBSOLETE!</strong><br>
                         apparently zooming was broken again - it did work on my local python server - i hope it fixed it this time

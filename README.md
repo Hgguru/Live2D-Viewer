@@ -1,4 +1,4 @@
-# <img src="assets/icon.svg" width="32" height="32" alt="Site Icon" style="vertical-align: text-bottom;"> Live2D Viewer <sub style="font-size: small;"><span style="color: #8c5eff;">v</span>5.0</sub>  
+# <img src="assets/icon.svg" width="32" height="32" alt="Site Icon" style="vertical-align: text-bottom;"> Live2D Viewer <sub style="font-size: small;"><span style="color: #8c5eff;">v</span>5.1</sub>  
 
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg?logo=opensourceinitiative&logoColor=white)](LICENSE)
 [![GitHub Pages](https://img.shields.io/github/deployments/ImDuck42/Live2D-Viewer/github-pages?label=Live%20Preview&logo=github)](https://imduck42.github.io/Live2D-Viewer)
@@ -60,7 +60,7 @@ and a "What's New" changelog modal, all wrapped in a clean, responsive design.
 -   **Core SDK**: Live2D Cubism Core
 -   **Icons**: [Font Awesome](https://fontawesome.com) v7.0.1
 -   **Zip handling**: [JSZip](https://stuk.github.io/jszip) v3.10.1
--   **CDN**: [jsDelivr](https://www.jsdelivr.com)
+-   **CDN**: [GitHub Raw](https://raw.githubusercontent.com)
 
 ## Project Structure
 
@@ -68,7 +68,6 @@ The project is organized into a clean, modular, and maintainable structure:
 
 ```
 .
-├── Archives_INACTIVE/   # Anything not listed below — best to stay away
 ├── assets/              # Static assets like icons, screenshots, and changelog
 ├── css/                 # Component-specific and global stylesheets
 ├── js/                  # Modular JavaScript files for each feature

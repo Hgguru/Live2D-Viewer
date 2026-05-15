@@ -1,96 +1,47 @@
-'use strict';
+const CHANGES_URL = 'assets/changes.html';
 
-document.addEventListener('DOMContentLoaded', () => {
-    //==============================================================================
-    // CONSTANTS & CONFIGURATION
-    //==============================================================================
-    const NEWSMODAL_CONFIG = {
-        CHANGES_HTML_URL: 'assets/changes.html',
+const init = async () => {
+  const titleBtn    = document.getElementById('title-btn');
+  const placeholder = document.getElementById('changelog-target');
+
+  if (!titleBtn || !placeholder) {
+    console.warn('News Modal: Required DOM elements not found. Feature disabled.');
+    return;
+  }
+
+  try {
+    const response = await fetch(CHANGES_URL);
+    if (!response.ok) throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+
+    // Inject the fetched HTML; the modal and close button live inside it.
+    placeholder.innerHTML = await response.text();
+
+    const modal    = document.getElementById('changelog-modal');
+    const closeBtn = document.getElementById('changelog-close-button');
+
+    if (!modal || !closeBtn) throw new Error('Changelog modal inner elements not found.');
+
+    const open = () => {
+      modal.classList.add('active');
+      document.body.classList.add('no-scroll');
     };
 
-    //==============================================================================
-    // DOM ELEMENT CACHE
-    //==============================================================================
-    const DOM = {
-        siteTitleButton: document.getElementById('site-title-button'),
-        changelogPlaceholder: document.getElementById('changelog-placeholder'),
-        body: document.body,
+    const close = () => {
+      modal.classList.remove('active');
+      document.body.classList.remove('no-scroll');
     };
 
-    // These elements are populated after the changelog content is fetched
-    let changelogModal = null;
-    let changelogCloseButton = null;
+    titleBtn.addEventListener('click', open);
+    closeBtn.addEventListener('click', close);
 
-    //==============================================================================
-    // CORE FUNCTIONALITY
-    //==============================================================================
-    // Opens the changelog modal and adds a class to the body to prevent background scrolling
-    const openModal = () => {
-        if (changelogModal) {
-            changelogModal.classList.add('active');
-            DOM.body.classList.add('no-scroll');
-        }
-    };
+    window.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && modal.classList.contains('active')) close();
+    });
 
-    // Closes the changelog modal and removes the no-scroll class from the body to restore background scrolling
-    const closeModal = () => {
-        if (changelogModal) {
-            changelogModal.classList.remove('active');
-            DOM.body.classList.remove('no-scroll');
-        }
-    };
+  } catch (err) {
+    console.error('News Modal: Error loading changelog:', err);
+    titleBtn.title = 'Changelog unavailable';
+  }
+};
 
-    //==============================================================================
-    // EVENT HANDLERS & LISTENERS
-    //==============================================================================
-    // Sets up event listeners including the open button, close button, and the 'Escape' key
-    const setupModalEventListeners = () => {
-        DOM.siteTitleButton.addEventListener('click', openModal);
-        changelogCloseButton.addEventListener('click', closeModal);
-
-        // Add a global keydown listener to close the modal with the 'Escape' key
-        window.addEventListener('keydown', (event) => {
-            if (event.key === 'Escape' && changelogModal?.classList.contains('active')) {
-                closeModal();
-            }
-        });
-    };
-
-    //==============================================================================
-    // INITIALIZATION
-    //==============================================================================
-    // Fetches and injects the changelog HTML content from an external file
-    const initializeChangelog = async () => {
-        if (!DOM.changelogPlaceholder || !DOM.siteTitleButton) {
-            console.warn("News Modal: Required DOM elements not found. Feature disabled.");
-            return;
-        }
-
-        try {
-            const response = await fetch(NEWSMODAL_CONFIG.CHANGES_HTML_URL);
-            if (!response.ok) {
-                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-            }
-
-            // Injects the entire modal structure from the external file
-            DOM.changelogPlaceholder.innerHTML = await response.text();
-
-            // Cache modal elements now that they have been added to the DOM
-            changelogModal = document.getElementById('changelog-modal');
-            changelogCloseButton = document.getElementById('changelog-close-button');
-
-            if (changelogModal && changelogCloseButton) {
-                setupModalEventListeners();
-            } else {
-                throw new Error("Changelog modal content loaded, but inner elements not found.");
-            }
-
-        } catch (error) {
-            console.error("News Modal: Error loading changelog content:", error);
-            DOM.siteTitleButton.title = 'Changelog unavailable';
-        }
-    };
-
-    // Initialize the changelog feature when the DOM is ready
-    initializeChangelog();
-});
+init();
